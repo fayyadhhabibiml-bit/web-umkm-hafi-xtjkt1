@@ -1,1 +1,302 @@
+/* Reset & Variabel Warna Khas Bolu Kemojo */
+:root {
+    --primary-green: #2e7d32;     /* Hijau Daun Pandan */
+    --dark-green: #1b5e20;        /* Hijau Tua */
+    --light-green: #e8f5e9;       /* Hijau Lembut Background */
+    --accent-gold: #f9a825;       /* Kuning Keemasan Panggang */
+    --text-dark: #2c3e50;
+    --text-muted: #546e7a;
+    --white: #ffffff;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.6rem;
+    color: var(--primary-green);
+    font-weight: 800;
+}
+
+.logo span {
+    color: var(--accent-gold);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-green);
+}
+
+.btn-nav {
+    background-color: var(--primary-green);
+    color: var(--white) !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--light-green) 0%, #c8e6c9 100%);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.badge {
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 0.85rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-2px);
+}
+
+/* About Section */
+.about {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about h3, .products h3 {
+    font-size: 2rem;
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: var(--text-muted);
+}
+
+/* Products Grid */
+.products {
+    background-color: #fafafa;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--primary-green);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--accent-gold);
+    color: var(--text-dark);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+}
+
+.card h4 {
+    font-size: 1.3rem;
+    color: var(--dark-green);
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    display: block;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+/* CTA Section */
+.cta {
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.cta h3 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.cta p {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: var(--white);
+    padding: 0.9rem 2.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+/* Footer */
+footer {
+    background-color: #123c16;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* Halaman Error 404 */
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--light-green);
+    text-align: center;
+    padding: 1rem;
+}
+
+.error-container {
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+}
+
+.error-container h1 {
+    font-size: 5rem;
+    color: var(--accent-gold);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.error-container h2 {
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+}
+
+.error-container p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+/* Responsif Mobile */
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    nav ul {
+        gap: 0.8rem;
+    }
+    .btn-nav {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
